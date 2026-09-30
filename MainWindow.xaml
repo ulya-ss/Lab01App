@@ -1,0 +1,44 @@
+﻿<Window x:Class="Lab01App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Первое приложение"
+        Height="300"
+        Width="400"
+        WindowStartupLocation="CenterScreen">
+
+    <StackPanel Margin="10">
+
+        <TextBlock Text="Введите имя:"/>
+
+        <TextBox x:Name="NameBox"
+                 Margin="0,5,0,10"/>
+
+        <StackPanel Orientation="Horizontal">
+
+            <Button Content="Приветствовать"
+                    Click="Button_Click"
+                    IsDefault="True"
+                    Margin="0,0,5,0"/>
+
+            <Button Content="Очистить"
+                    Click="ClearButton_Click"/>
+
+        </StackPanel>
+
+        <TextBlock x:Name="ResultText"
+                   Margin="0,10,0,0"
+                   FontWeight="Bold"
+                   Foreground="#2D6CB5"/>
+
+        <TextBlock x:Name="CounterText"
+                   Text="Нажатий: 0"
+                   Margin="0,10,0,0"/>
+
+        <Button Content="Закрыть"
+                Click="CloseButton_Click"
+                IsCancel="True"
+                Margin="0,10,0,0"/>
+
+    </StackPanel>
+
+</Window>
